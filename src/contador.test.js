@@ -21,4 +21,9 @@ describe("Contador de Palabras", () => {
     expect(cont.contarTodo("HOLA MunDo hola sbshds hola hdeu hde HOLA hdeu")).toEqual([4, 1, 1, 2, 1]);
   });
 
+  it("deberia pasar el caso de prueba", () => {
+    let cont = new Contador();
+    expect(cont.contarTodo("El password de mi cuenta es PASSWORD. Es un password de poco cuidado")).toEqual([1, 3, 2, 1, 1, 2, 1, 1, 1]);
+  });
+
 });

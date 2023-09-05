@@ -46,7 +46,7 @@ export class Contador{
         aux = "";
       }
     }
-    return palabras.length;
+    return palabras;
   }
 
 }

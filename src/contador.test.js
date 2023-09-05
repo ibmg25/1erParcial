@@ -13,7 +13,7 @@ describe("Contador de Palabras", () => {
 
   it("deberia devolver la cantidad de palabras diferentes en una frase", () => {
     let cont = new Contador();
-    expect(cont.encontrarPalabras("HOLA MunDo hola sbshds hola hdeu hde HOLA")).toEqual(5);
+    expect(cont.encontrarPalabras("HOLA MunDo hola sbshds hola hdeu hde HOLA")).toEqual(["hola", "mundo", "sbshds", "hdeu", "hde"]);
   });
 
 });

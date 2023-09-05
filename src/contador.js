@@ -49,6 +49,18 @@ export class Contador{
     return palabras;
   }
 
+  contarTodo(frase){
+    let palabras = this.encontrarPalabras(frase);
+    let contadas = [];
+    let pos = 0;
+    for(let i = 0; i < palabras.length; i++){
+      let cont = this.contarRepeticionesPalabra(palabras[i], frase);
+      contadas[pos] = cont;
+      pos++;
+    }
+    return contadas;
+  }
+
 }
 
 export default Contador;
